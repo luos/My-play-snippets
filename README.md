@@ -12,7 +12,9 @@ I'm writing my first play application in my free time and I was surprised there 
 I use play 2.1 with squeryl. 
 
 
-TODO: Look for some method to include these extensions to play as simple as possible, maybe as a modul or plugin or project. Secure Form CSRF Snippet
+TODO: Look for some method to include these extensions to play as simple as possible, maybe as a modul or plugin or project. 
+
+Secure Form CSRF Snippet
 ---------------
 
 This view snippet is for including csrf in a cleaner style to the view than ```@form(CSRF(action))```
@@ -49,14 +51,18 @@ and add "filters" as dependency in your Build.scala like this (you don't have to
 
 This only works in 2.1 because the filters became available in this version.
 
-(Look at how CSRFFilter works, you can find some truly *good* pieces of code because of immutation)\n\nLuos's Utils
+(Look at how CSRFFilter works, you can find some truly *good* pieces of code because of immutation)
+
+Luos's Utils
 ------------
 
 This object has (will have) some useful methods, currently only one. 
 
 ### Slugify
 
-Removes accents and other stuff from string\n\nPagination
+Removes accents and other stuff from string
+
+Pagination
 -------------
 
 This is a simple pagination snippet for play squeryl. 
@@ -86,4 +92,6 @@ In the view, you can call
 	This will render the pagenumbers:
 	@page.render
 
-```\n\n,
+```
+
+,

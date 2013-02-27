@@ -3,6 +3,8 @@
 FILES=`find . | grep md$`
 
 OP=`cat README_main.md`
+nl=$'\n\n'
+OP+=${nl}
 
 echo $FILES
 
@@ -13,7 +15,7 @@ do
 		if [ ! $FILE == "./README_main.md" ]
 		then
 			OP+=`cat $FILE`
-			OP+=$"\n\n"
+			OP+="${nl}"
 		fi	
 	fi
 done

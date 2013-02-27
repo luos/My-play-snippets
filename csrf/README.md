@@ -17,3 +17,5 @@ object Global extends WithFilters(CSRFFilter()) with GlobalSettings {
 ```
 
 This only works in 2.1 because the filters became available in this version.
+
+(Look at how CSRFFilter works, you can find some truly *good* pieces of code because of immutation)

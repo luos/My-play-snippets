@@ -13,6 +13,7 @@ do
 		if [ ! $FILE == "./README_main.md" ]
 		then
 			OP+=`cat $FILE`
+			OP+="\n"
 		fi	
 	fi
 done

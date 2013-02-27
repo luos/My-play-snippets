@@ -13,3 +13,4 @@ I use play 2.1 with squeryl.
 
 
 TODO: Look for some method to include these extensions to play as simple as possible, maybe as a modul or plugin or project. 
+

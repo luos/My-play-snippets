@@ -49,14 +49,14 @@ and add "filters" as dependency in your Build.scala like this (you don't have to
 
 This only works in 2.1 because the filters became available in this version.
 
-(Look at how CSRFFilter works, you can find some truly *good* pieces of code because of immutation)\nLuos's Utils
+(Look at how CSRFFilter works, you can find some truly *good* pieces of code because of immutation)\n\nLuos's Utils
 ------------
 
 This object has (will have) some useful methods, currently only one. 
 
 ### Slugify
 
-Removes accents and other stuff from string\nPagination
+Removes accents and other stuff from string\n\nPagination
 -------------
 
 This is a simple pagination snippet for play squeryl. 
@@ -86,4 +86,4 @@ In the view, you can call
 	This will render the pagenumbers:
 	@page.render
 
-```\n
+```\n\n,

@@ -13,9 +13,9 @@ do
 		if [ ! $FILE == "./README_main.md" ]
 		then
 			OP+=`cat $FILE`
-			OP+="\n"
+			OP+=$"\n\n"
 		fi	
 	fi
 done
 
-echo "$OP" > README.md
+printf "%s", "$OP" > README.md

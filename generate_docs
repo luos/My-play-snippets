@@ -1,0 +1,20 @@
+#!/bin/bash
+
+FILES=`find . | grep md$`
+
+OP=`cat README_main.md`
+
+echo $FILES
+
+for FILE in $FILES 
+do
+	if [ ! $FILE == "./README.md" ]
+	then
+		if [ ! $FILE == "./README_main.md" ]
+		then
+			OP+=`cat $FILE`
+		fi	
+	fi
+done
+
+echo "$OP" > README.md

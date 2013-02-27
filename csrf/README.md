@@ -16,7 +16,7 @@ object Global extends WithFilters(CSRFFilter()) with GlobalSettings {
 
 ```
 
-and add dependencies in your Build.scala
+and add "filters" as dependency in your Build.scala like this (you don't have to add the others)
 
 ```
   val appDependencies = Seq(
@@ -25,7 +25,7 @@ and add dependencies in your Build.scala
     anorm,
     "mysql" % "mysql-connector-java" % "5.1.18",
     "org.squeryl" % "squeryl_2.10" % "0.9.5-6",
-    __filters__,
+    filters,
     "be.objectify" %% "deadbolt-core" % "2.1-SNAPSHOT",
     javaJpa
   )

@@ -1,0 +1,23 @@
+@**
+ * Generate an HTML form.
+ *
+ * Example:
+ * {{{
+ * @form(action = routes.Users.submit, args = 'class -> "myForm") {
+ *   ...
+ * }
+ * }}}
+ *
+ * @param action The submit action.
+ * @param args Set of extra HTML attributes.
+ * @param body The form body.
+ *@
+
+@(action: play.api.mvc.Call, args: (Symbol,String)*)(body: => Html)(implicit request: play.api.mvc.Request[Any])
+@{if ( ! request.session.get("CSRF_TOKEN").isDefined ){
+	//response.session.set("CSRF_TOKEN","asd")
+}}
+<form action="@action.url" method="@action.method" @toHtmlArgs(args.toMap)>
+	<input type="hidden" name="csrfToken" value="@request.session.get("csrfToken")" />
+	  @body
+ </form>
